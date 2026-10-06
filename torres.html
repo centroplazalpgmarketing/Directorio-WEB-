@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torres Ejecutivas - Centro Plaza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ================= HEADER ================= -->
+    <header class="main-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="Imagenes, Logo, Iconografia/Logo Centro Plaza-02PNG.png" alt="Centro Plaza">
+            </a>
+            <nav class="main-nav">
+                <a href="index.html">Inicio</a>
+                <div class="dropdown">
+                    <a href="niveles.html">Niveles <span class="arrow">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="niveles.html#cc3">CC3</a>
+                        <a href="niveles.html#cc4">CC4</a>
+                        <a href="niveles.html#cc5">CC5</a>
+                        <a href="niveles.html#cc6">CC6</a>
+                        <a href="niveles.html#cc7">CC7</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="torres.html" class="active">Torres <span class="arrow">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="torres.html#torre-a">Torre A</a>
+                        <a href="torres.html#torre-b">Torre B</a>
+                        <a href="torres.html#torre-c">Torre C</a>
+                        <a href="torres.html#torre-d">Torre D</a>
+                    </div>
+                </div>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Abrir menú">☰</button>
+        </div>
+    </header>
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main>
+
+        <div class="breadcrumbs-container">
+            <nav class="breadcrumbs">
+                <a href="index.html">Inicio</a> &gt; <span>Torres</span>
+            </nav>
+        </div>
+
+        <section class="page-header bg-light">
+            <div class="container">
+                <span class="badge">ESPACIOS PARA TRABAJAR Y CONECTAR</span>
+                <h1>Torres</h1>
+                <p>Cuatro torres. Un mismo punto de encuentro para oficinas y servicios profesionales.</p>
+            </div>
+        </section>
+
+        <section class="tabs-section">
+            <div class="container">
+                <div class="tabs-container">
+                    <a href="#torre-a" class="tab-btn active">Torre A</a>
+                    <a href="#torre-b" class="tab-btn">Torre B</a>
+                    <a href="#torre-c" class="tab-btn">Torre C</a>
+                    <a href="#torre-d" class="tab-btn">Torre D</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="tower-content-section" id="torre-a">
+            <div class="container">
+
+                <div class="tower-hero-grid">
+                    <div class="tower-hero-text">
+                        <span class="badge">TORRE ACTIVA · A</span>
+                        <h2>Torre A</h2>
+                        <h3 class="subtitle">Un espacio para tus ideas</h3>
+                        <p>Consulta las oficinas por piso y especialidad. Este ejemplo reúne arquitectura, consultoría y servicios de salud en una misma vista del directorio.</p>
+                        <div class="tower-features">
+                            <p><strong>Pisos 2-5</strong> · 4 oficinas</p>
+                            <p class="text-sm">Contenido demostrativo, por confirmar</p>
+                        </div>
+                        <p class="services-list">Servicios del ejemplo: arquitectura, consultoría, salud y diseño.</p>
+                        <a href="#oficinas-torre-a" class="btn btn-primary">Ver oficinas de Torre A ↓</a>
+                    </div>
+                    <div class="tower-hero-image">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="Torre A">
+                    </div>
+                </div>
+
+                <div class="tower-directory-section" id="oficinas-torre-a">
+                    <span class="badge">DIRECTORIO PROFESIONAL</span>
+                    <h2>Oficinas en Torre A</h2>
+                    <p>Encuentra el equipo o servicio que necesitas, piso a piso.</p>
+
+                    <form class="search-bar tower-search" action="#" method="get">
+                        <div class="input-group">
+                            <label for="tower-nombre">Nombre de la oficina</label>
+                            <input type="text" id="tower-nombre" name="nombre" placeholder="Buscar oficina">
+                        </div>
+                        <div class="input-group">
+                            <label for="tower-piso">Piso</label>
+                            <select id="tower-piso" name="piso">
+                                <option>Todos los pisos</option>
+                                <option>Piso 2</option>
+                                <option>Piso 3</option>
+                                <option>Piso 4</option>
+                                <option>Piso 5</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="tower-servicio">Servicio</label>
+                            <select id="tower-servicio" name="servicio">
+                                <option>Todas las especialidades</option>
+                                <option>Arquitectura</option>
+                                <option>Consultoría</option>
+                                <option>Salud</option>
+                                <option>Diseño</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-search">Buscar 🔍</button>
+                    </form>
+
+                    <div class="filter-results-info flex-between">
+                        <p>4 oficinas de muestra <span>Mostrando todas las fichas del ejemplo</span></p>
+                        <div class="sort-dropdown">
+                            <label for="sort-oficinas">Ordenar</label>
+                            <select id="sort-oficinas">
+                                <option>Nombre A-Z</option>
+                                <option>Piso (menor a mayor)</option>
+                                <option>Piso (mayor a menor)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="offices-grid">
+
+                        <div class="office-card">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=500" alt="Oficina">
+                            <div class="office-info">
+                                <span class="tag">Arquitectura</span>
+                                <h3>Estudio de arquitectura</h3>
+                                <p class="office-ubicacion">Torre A · Piso 2 · Oficina 2A · ejemplo</p>
+                                <ul class="local-contact-list">
+                                    <li>📞 Teléfono: por confirmar</li>
+                                    <li>💬 WhatsApp: por confirmar</li>
+                                    <li>📷 Instagram: por confirmar</li>
+                                    <li>⏰ Horario: Lun-Vie 8:00-17:00</li>
+                                </ul>
+                                <a href="contacto.html" class="btn btn-outline btn-full">Contactar ↗</a>
+                            </div>
+                        </div>
+
+                        <div class="office-card">
+                            <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=500" alt="Oficina">
+                            <div class="office-info">
+                                <span class="tag">Consultoría</span>
+                                <h3>Consultoría empresarial</h3>
+                                <p class="office-ubicacion">Torre A · Piso 3 · Oficina 3B · ejemplo</p>
+                                <ul class="local-contact-list">
+                                    <li>📞 Teléfono: por confirmar</li>
+                                    <li>💬 WhatsApp: por confirmar</li>
+                                    <li>📷 Instagram: por confirmar</li>
+                                    <li>⏰ Horario: Lun-Vie 8:00-17:00</li>
+                                </ul>
+                                <a href="contacto.html" class="btn btn-outline btn-full">Contactar ↗</a>
+                            </div>
+                        </div>
+
+                        <div class="office-card">
+                            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=500" alt="Oficina">
+                            <div class="office-info">
+                                <span class="tag">Salud</span>
+                                <h3>Consultorio integral</h3>
+                                <p class="office-ubicacion">Torre A · Piso 4 · Oficina 4A · ejemplo</p>
+                                <ul class="local-contact-list">
+                                    <li>📞 Teléfono: por confirmar</li>
+                                    <li>💬 WhatsApp: por confirmar</li>
+                                    <li>📷 Instagram: por confirmar</li>
+                                    <li>⏰ Horario: Lun-Vie 8:00-17:00</li>
+                                </ul>
+                                <a href="contacto.html" class="btn btn-outline btn-full">Contactar ↗</a>
+                            </div>
+                        </div>
+
+                        <div class="office-card">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=500" alt="Oficina">
+                            <div class="office-info">
+                                <span class="tag">Diseño</span>
+                                <h3>Agencia creativa</h3>
+                                <p class="office-ubicacion">Torre A · Piso 5 · Oficina 5C · ejemplo</p>
+                                <ul class="local-contact-list">
+                                    <li>📞 Teléfono: por confirmar</li>
+                                    <li>💬 WhatsApp: por confirmar</li>
+                                    <li>📷 Instagram: por confirmar</li>
+                                    <li>⏰ Horario: Lun-Vie 8:00-17:00</li>
+                                </ul>
+                                <a href="contacto.html" class="btn btn-outline btn-full">Contactar ↗</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="disclaimer">
+                        ⚠️ Directorio demostrativo. Pisos, números de oficina, especialidades, contactos y horarios son ejemplos por confirmar; las fotografías son referenciales.
+                    </div>
+
+                    <div class="tower-help-cta">
+                        <p>¿No encuentras lo que buscas? Podemos orientarte.</p>
+                        <a href="contacto.html" class="link-arrow">Contactar con Centro Plaza ↗</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="Imagenes, Logo, Iconografia/Logo Centro PlazaWHITE_Mesa de trabajo 1.png" 
+                     alt="Centro Plaza" 
+                     class="footer-logo">
+                <p>Un lugar de encuentros, comercios e historias. 53 años formando parte de Los Palos Grandes.</p>
+                <p class="address">Los Palos Grandes, Caracas</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explora Centro Plaza</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="niveles.html">Niveles comerciales</a></li>
+                    <li><a href="torres.html">Torres</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Estamos para ayudarte</h4>
+                <p>Teléfono Dep. Marketing: +584141225853</p>
+                <p>Teléfono Dep. Administración: +584141239666</p>
+                <p>Horario:</p>
+                <p>Lunes-Viernes 6:00-21:00</p>
+                <p>Sábados, Domingos y Feriados 7:00-21:00</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Sitio web">🔗</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container flex-between">
+                <span>© 2026 @Davidpint1401 · Directorio web</span>
+                <span>Diseño demostrativo · Datos pendientes de validación</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
